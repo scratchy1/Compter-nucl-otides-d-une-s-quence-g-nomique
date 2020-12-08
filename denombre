@@ -1,0 +1,10 @@
+def denombre(sequence,nucleotide):  		# definition de la fonction de nombre
+    compteur_nucleotide = 0                     # compteur du nucleotide choisi
+    for nucleotide_lu in sequence:
+        if nucleotide_lu == nucleotide:
+            compteur_nucleotide += 1
+    return compteur_nucleotide	
+sequence = input("sequence a analyser : ")  	       
+nucleotide = input("nucleotide a denombrer : ")     # input et non raw_input
+n = denombre(sequence,nucleotide) 				   
+print ('%s apparait %s fois dans %s' % (nucleotide, n, sequence))   # doubler les parentheses
